@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Los Backrooms</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <!-- ENCABEZADO -->
+    <header class="navbar">
+        <a href="index.html" class="logo">BACKROOMS</a>
+
+        <nav>
+            <ul class="nav-links">
+
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CUERPO -->
+    <main>
+        <section class="contacto">
+
+            <!-- CANALES DE CONTACTO -->
+            <section class="canales-contacto">
+                <h1>¿CÓMO CONTACTARNOS?</h1>
+
+                <p>
+                    Nuestro equipo está disponible para atender tus solicitudes.
+                    Por favor, utiliza el canal correspondiente.
+                </p>
+
+                <!-- ATENCIÓN AL CLIENTE -->
+                <div class="canal">
+                    <h2>Atención al cliente</h2>
+
+                    <p>
+                        ¿Tienes alguna duda sobre tu visita?
+                        Estamos aquí para ayudarte.
+                    </p>
+
+                    <p>
+                        <strong>
+                            <a href="mailto:atencionalcliente@backrooms.com.co">
+                                atencionalcliente@backrooms.com.co
+                            </a>
+                        </strong>
+                    </p>
+                </div>
+
+                <!-- ATENCIÓN A PROVEEDORES -->
+                <div class="canal">
+                    <h2>Atención al proveedor</h2>
+
+                    <p>
+                        Para consultas comerciales y solicitudes
+                        relacionadas con nuestros servicios:
+                    </p>
+
+                    <p>
+                        <strong>
+                        <a href="mailto:atencionproveedores@backrooms.com.co">
+                            atencionproveedores@backrooms.com.co
+                        </a>
+                        </strong>
+                    </p>
+                </div>
+
+                <!-- PQRS -->
+                <div class="canal">
+                    <h2>Radicar PQRS</h2>
+
+                    <p>
+                        Puedes presentar peticiones, quejas,
+                        reclamos o sugerencias a través de nuestro
+                        canal de atención al cliente.
+                    </p>
+
+                    <strong>
+                    <a href="mailto:atencionalcliente@backrooms.com.co">
+                        Enviar una PQRS
+                    </a>
+                    </strong>
+
+                    <p class="aviso-inquietante">
+                        No garantizamos respuesta.
+                    </p>
+                </div>
+
+                <!-- WHATSAPP -->
+                <div class="canal">
+                    <h2>Contáctanos por WhatsApp</h2>
+
+                    <p>
+                        Podemos ayudarte con algunas de tus dudas.
+                        <br>Otras deberán permanecer sin respuesta.
+                    </p>
+
+                    <strong>
+                    <a href="https://wa.me/57XXXXXXXXXX" target="_blank" rel="noopener noreferrer">
+                        Escribir por WhatsApp
+                    </a>
+                    </strong>
+                </div>
+            </section>
+
+            <!-- INTRODUCCIÓN AL FORMULARIO -->
+            <section class="introduccion-contacto">
+                <p class="texto-sistema">
+                    REGISTRO DE VISITANTES: NIVEL 0
+                </p>
+
+                <h2>Hablemos de tu visita</h2>
+
+                <p>
+                    Si has tenido algún inconveniente durante tu visita,
+                    puedes contárnoslo a continuación.
+                </p>
+
+                <p class="aviso-inquietante">
+                    Por favor, describe los hechos tal como los recuerdas.
+                    No omitas ningún detalle.
+                </p>
+            </section>
+
+            <!-- FORMULARIO -->
+            <section class="formulario-contacto">
+                <form id="formContacto">
+
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+
+                        <input type="text" class="form-control" name="nombre" id="nombre"
+                            placeholder="¿Cómo debemos llamarte?" autocomplete="name" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefono">Teléfono</label>
+
+                        <input type="tel" class="form-control" name="telefono" id="telefono" placeholder="300 000 0000"
+                            autocomplete="tel" inputmode="tel" maxlength="14" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="correo">Correo electrónico</label>
+
+                        <input type="email" class="form-control" id="correo" name="correo"
+                            placeholder="tucorreo@ejemplo.com" autocomplete="email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="asunto">Asunto</label>
+
+                        <input type="text" class="form-control" id="asunto" name="asunto"
+                        placeholder="Desapareció mi mamá" autocomplete="text" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensaje">
+                            Motivo del contacto
+                        </label>
+
+                        <textarea class="form-control" name="mensaje" id="mensaje" rows="5"
+                            placeholder="Cuéntanos qué ocurrió..." required></textarea>
+                    </div>
+
+                    <div class="acciones-formulario">
+                        <button type="submit">¿Enviar?</button>
+                    </div>
+
+                    <p class="aviso-inquietante">
+                        Una vez enviado, el registro permanecerá con nosotros.
+                    </p>
+
+                </form>
+            </section>
+
+        </section>
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div>
+
+            <h3>BACKROOMS</h3>
+            <p>Nosotros S.A.S. - 2026</p>
+
+        </div>
+
+        <div>
+            <h3>AUTORES:</h3>
+            <ul>
+
+                <li>Cada uno coloca su nombre en un LI</li>
+                <li>Cada uno coloca su nombre en un LI</li>
+                <li>Cada uno coloca su nombre en un LI</li>
+                <li>Cada uno coloca su nombre en un LI</li>
+
+            </ul>
+        </div>
+
+        <div>
+            <h3>Atención al cliente</h3>
+            <p><a href="mailto:atencionalcliente@backrooms.com.co"> atencionalcliente@backrooms.com.co</a></p>
+        </div>
+
+        <div>
+            <p>Backrooms S.A.S. &copy; 2026 - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
