@@ -19,5 +19,83 @@ h4,
 h5,
 h6{
     font-family: var(--font-title);
-    
+}
+
+
+/* SECCIÓN INICIO */
+.inicio {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background-color: var(--void);
+    color: var(--neon);
+    border-bottom: 5px solid var(--carpet);
+}
+
+/* CONTENIDO */
+.inicio-contenido {
+    max-width: 750px;
+}
+
+/* TEXTO SUPERIOR */
+.inicio-etiqueta {
+    color: var(--bg-wall);
+    font-family: var(--font-text);
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+/* TÍTULO PRINCIPAL */
+.inicio h1 {
+    font-family: var(--font-title);
+    font-size: clamp(32px, 5vw, 58px);
+    line-height: 1.15;
+    margin-bottom: 25px;
+    text-shadow: 3px 3px 12px var(--void);
+}
+
+/* PREGUNTA */
+.inicio h2 {
+    color: var(--bg-wall);
+    font-size: clamp(22px, 3vw, 32px);
+    margin-bottom: 20px;
+}
+
+/* DESCRIPCIÓN */
+.inicio-descripcion {
+    max-width: 600px;
+    line-height: 1.8;
+    font-size: 17px;
+    color: var(--neon);
+    font-family: var(--font-text);
+}
+
+/* FRASE DE SUSPENSO */
+.inicio-suspenso {
+    margin-top: 25px;
+    line-height: 1.8;
+    color: var(--bg-wall);
+    font-family: var(--font-title);
+}
+
+/* BOTÓN EXPLORAR*/
+.boton-explorar {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 24px;
+    border: 1px solid var(--bg-wall);
+    background-color: var(--carpet);
+    color: var(--neon);
+    text-decoration: none;
+    font-family: var(--font-title);
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-explorar:hover {
+    background-color: var(--bg-wall);
+    color: var(--void);
 }
