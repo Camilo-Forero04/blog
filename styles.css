@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+  --bg-wall: #DEC883;  /* Amarillo mostaza desgastado */
+  --carpet: #877656;   /* Marrón de alfombra vieja */
+  --void: #11100C;     
+  --text: #2B281D;     
+  --neon: #F0F6EB;    
+  --font-title: Courier Prime, sans-serif;
+  --font-text: Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: var(--font-title);
+    
+}
