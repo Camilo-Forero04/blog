@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-wall: #DEC883;  /* Amarillo mostaza desgastado */
+  --carpet: #877656;   /* Marrón de alfombra vieja */
+  --void: #11100C;
+  --text: #2B281D;
+  --neon: #F0F6EB;
+  --font-title: "Courier Prime", "Courier New", monospace;
+  --font-text: "Inter", Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+}
+
+body{
+    margin: 0;
+}
+
+#video{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden; /*Que pasa cuando un elemento que contienes se sales ? se oculta el contenido sobrante*/
+}
+
+#video video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*Se asegura de llenar todo el contenedor padre con este elemento*/
+}
+
+/*Esto es como crear una capa por encima*/
+#video::after{
+    content: ""; /*Es obligatorio, sin el no se renderiza el after*/
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,0.45);
+    z-index: 1;
+}
+
+#contenido,
+#info-about,
+#presentacion {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+
+#contenido {
+    color: var(--bg-wall);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+#info-about {
+    background-color: var(--void);
+    color: var(--neon);
+    width: 55%;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+a{
+    text-decoration: none;
+    color: var(--bg-wall);
+}
+
+a:hover{
+    color: var(--neon);
+}
+
+#info-about{
+    background-color: var(--void);
+    color: var(--neon);
+    width: 55%;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 12px;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+em,
+strong{
+    color: var(--bg-wall);
+}
+
+#equipo-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#presentacion {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B281D;
+    margin-bottom: 12px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    color: var(--neon);
+}
+
+.rol h3{
+    color: var(--bg-wall);
+}
+
+.fa-code,
+.fa-trello,
+.fa-user{
+    width: 40px;
+    height: 40px;
+    color: var(--bg-wall);
+}
+
+#equipo{
+    font-size: 1.4rem;
+    color: var(--neon);
+}
+
+.oculto{
+    display:none !important;
+}
+
+.pista {
+    display: block;
+    margin-top: 12px;
+    color: var(--bg-wall);
+    animation: parpadeo 1.5s infinite;
+}
+
+@keyframes parpadeo {
+    50% { opacity: 0.3; }
+}
