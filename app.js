@@ -286,3 +286,30 @@ document.addEventListener("DOMContentLoaded", () => {
     configurarEnlacesContacto();
     configurarFormulario();
 });
+
+
+const contenido = document.querySelector('#contenido');
+const enlace = document.querySelector('#contenido a');
+const infoAbout = document.querySelector('#info-about');
+const presentacion = document.querySelector('#presentacion');
+
+function mostrarInfo(e) {
+    e.preventDefault();
+    contenido.classList.add('oculto');
+    infoAbout.classList.remove('oculto');
+}
+
+function mostrarPresentacion() {
+    infoAbout.classList.add('oculto');
+    presentacion.classList.remove('oculto');
+}
+
+
+function volverAlInicio() {
+    presentacion.classList.add('oculto');
+    contenido.classList.remove('oculto');
+}
+
+enlace.addEventListener('click', mostrarInfo);
+infoAbout.addEventListener('click', mostrarPresentacion);
+presentacion.addEventListener('click', volverAlInicio);
